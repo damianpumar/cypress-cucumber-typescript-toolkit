@@ -1,0 +1,22 @@
+{
+  "name": "cypress-cucumber-typescript-example",
+  "version": "1.0.0",
+  "description": "Example of how to use Cypress with Cucumber and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypress open",
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:chrome": "cypress run --browser chrome --spec \"**/*.feature\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
